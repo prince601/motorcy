@@ -50,7 +50,7 @@ This project is licensed under the ISC License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 - Inspiration
-- Great webdev Content creators on [Youtube](https://youtube.com)
+- Great webdev Content creators on [Youtube](https://www.youtube.com/user/TechGuyWeb)
 - [PIXABAY](https://pixabay.com)
 - [PEXELS](https://pexels.com)
 - [FREEPIK](https://freepik.com)
