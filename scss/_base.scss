@@ -1,0 +1,52 @@
+:root {
+  //COLOR VARIABLES
+  --primary-color: #f46524;
+  --primary-color-dark: darken(var(--primary-color), 10);
+  --secondary-color: #334960;
+  --secondary-color-light-1: rgb(167, 176, 191);
+  --secondary-color-light-2: rgb(104, 120, 135);
+  --light-color: rgb(235, 237, 239);
+  --light-color-primary: rgb(252, 236, 230);
+  --light-redish-primary: rgb(197, 57, 41);
+
+  //FONTS VARIABLES
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Open sans', Helvetica, sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+
+  font-size: 65.5%; // 10/16 = 62.5% ==> 1rem = 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: inherit;
+  color: var(--secondary-color-light-2);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    calc(100vh - 9rem) minmax(9rem, min-content) repeat(
+      3,
+      minmax(30vw, max-content)
+    )
+    minmax(10vw, max-content) minmax(7rem, max-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(15rem, 1fr) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+}

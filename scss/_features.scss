@@ -1,0 +1,13 @@
+.features {
+  &__picture {
+    grid-column: 1/7;
+    background-color: var(--light-redish-primary);
+    padding: 3rem;
+  }
+
+  &__section {
+    grid-column: 7/11;
+    background-color: var(--light-color-primary);
+    padding: 3rem;
+  }
+}

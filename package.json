@@ -1,0 +1,32 @@
+{
+  "name": "motorcy",
+  "version": "1.0.0",
+  "description": "motorcy landingpage with netlify form submission integrated",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "netlify": "netlify dev",
+    "start": "npm-run-all --parallel watch:sass netlify",
+    "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/main.comp.css -o dist/css/main.prefix.css",
+    "compress:css": "node-sass dist/css/main.prefix.css dist/css/main.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince601/motorcy.git"
+  },
+  "keywords": [],
+  "author": "Prince kab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prince601/motorcy/issues"
+  },
+  "homepage": "https://github.com/prince601/motorcy#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}
