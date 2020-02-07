@@ -13,32 +13,34 @@
       name="keywords"
       name="motorcy, responsive design, buy a moto, css grid"
     />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/main.css" />
     <title>LAYOUT - MOTORCY</title>
   </head>
   <body class="container">
     <header class="showcase" id="showcase">
-     <div class="showcase__logo">
-
-     </div>
-    <i class="icon__large">
-
-    </i>
-     <h2 class="heading__secondary heading--light">
-       WIN ON
-     </h2>
-     <h1 class="heading__primary heading--light">
+      <div class="showcase__logo">
+        <img
+          src="img/logo__motorcy__500.png"
+          alt="logo"
+          role="logo"
+          class="logo"
+        />
+      </div>
+      <h2 class="showcase__heading--1 heading__secondary heading--light">
+        WIN ON
+      </h2>
+      <h1 class="showcase__heading--2 heading__primary heading--light">
         MOTORCY
-     </h1>
-     <button class="btn btn--full">
-        <span class="btn__text--visible">
-          I want to 
-          &arr;
-        </span>
-        <span class="btn__text--invisible">VROOOM</span>
-     </button>
-
+      </h1>
+      <p class="showcase__paragraph light">A harley davidson Company</p>
+      <a href="#contact" class="showcase__btn btn btn__full">
+        i want to
+        <svg class="icon icon-light">
+          <use xlink:href="img/sprite.svg#icon-arrow-long-right"></use>
+        </svg>
+      </a>
+      <h1 class="showcase__title">MOTORCY</h1>
     </header>
     <nav class="nav">
       NAVIGATION
@@ -61,7 +63,6 @@
     <footer class="footer">
       FOOTER
     </footer>
-    <script src="main.js">
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

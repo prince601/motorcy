@@ -1,0 +1,65 @@
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--light-color);
+  justify-self: center;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 0;
+  font-size: 1.6rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(1);
+  padding: 1.3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(4rem, max-content));
+  align-content: center;
+  &:hover {
+    background-color: darken(#f46524, 15);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: scale(0.9);
+    transition: all 0.2s;
+  }
+
+  &__round {
+    border-radius: 50%;
+  }
+
+  &__round-right {
+    border-bottom-right-radius: 30px;
+  }
+}
+
+.btn__outlined {
+}
+
+.btn__text--invisible {
+  display: none;
+}
+
+.btn__text--visible {
+}
+
+.heading__primary {
+  font-size: 12rem;
+  font-weight: bold;
+  text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
+  color: var(--light-color);
+}
+
+.heading__secondary {
+  font-size: 5rem;
+  font-weight: 600;
+  text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
+  color: var(--light-color);
+}

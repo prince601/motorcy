@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "netlify": "netlify dev",
-    "start": "npm-run-all --parallel watch:sass netlify",
+    "devserver": "live-server  --port=8080 --browser=firefox",
+    "start": "npm-run-all --parallel watch:sass devserver",
     "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/main.comp.css -o dist/css/main.prefix.css",
     "compress:css": "node-sass dist/css/main.prefix.css dist/css/main.min.css --output-style compressed",
