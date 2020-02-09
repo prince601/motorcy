@@ -62,9 +62,14 @@
   &__paragraph {
     grid-row: 3/4;
     grid-column: 3/4;
+    justify-self: start;
+    align-self: start;
     color: var(--light-color);
     font-size: 1.6rem;
+    font-weight: 450;
     font-family: var(--font-primary);
+    border-top: 5px solid var(--primary-color);
+    padding-top: 0.3rem;
   }
 
   &__title {

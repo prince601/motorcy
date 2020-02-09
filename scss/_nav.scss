@@ -1,4 +1,52 @@
 .nav {
   grid-column: full-start/full-end;
-  background-color: var(--secondary-color-light-1);
+  background-color: var(--primary-color);
+
+  display: grid;
+  grid-template-columns:
+    minmax(12rem, min-content) minmax(min-content, 1fr) minmax(
+      10rem,
+      max-content
+    )
+    5rem;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    align-self: center;
+    justify-self: center;
+    min-height: 5rem;
+    min-width: 5rem;
+    margin: 1rem 3rem;
+    svg {
+      fill: var(--light-color);
+      min-height: 10rem;
+      width: 8vw;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 15rem));
+    align-items: center;
+    justify-content: center;
+
+    &--item {
+      display: block;
+
+      .link:link,
+      .link:visited {
+        color: var(--light-color);
+        padding: 2rem 3rem;
+        font-size: 1.6rem;
+        font-weight: 450;
+        text-transform: uppercase;
+      }
+      .link:hover {
+        color: rgba(var(--secondary-color), 0.589);
+        transform: translateY(-6px);
+        transition: color 0.3s;
+      }
+    }
+  }
 }

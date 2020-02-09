@@ -35,18 +35,22 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  transition: all 0.3s;
 }
 
 .container {
   display: grid;
   grid-template-rows:
-    calc(100vh - 9rem) minmax(9rem, min-content) repeat(
-      3,
-      minmax(30vw, max-content)
-    )
+    calc(100vh - 6rem) min-content repeat(3, minmax(30vw, max-content))
     minmax(10vw, max-content) minmax(7rem, max-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(15rem, 1fr) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  list-style: none;
 }

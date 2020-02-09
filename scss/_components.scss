@@ -19,7 +19,6 @@
   padding: 1.3rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(4rem, max-content));
-  align-content: center;
   &:hover {
     background-color: darken(#f46524, 15);
   }
@@ -41,25 +40,23 @@
 }
 
 .btn__outlined {
-}
-
-.btn__text--invisible {
-  display: none;
-}
-
-.btn__text--visible {
+  border: 1px solid var(--light-color);
 }
 
 .heading__primary {
-  font-size: 12rem;
-  font-weight: bold;
+  font-weight: 900;
+  letter-spacing: -0.161em;
+  font-size: 13.7rem;
+  font-style: normal;
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
   color: var(--light-color);
 }
 
 .heading__secondary {
-  font-size: 5rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  font-size: 10.7rem;
+  font-style: normal;
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
   color: var(--light-color);
 }
