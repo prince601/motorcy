@@ -6,7 +6,6 @@
 }
 
 .btn {
-  background-color: var(--primary-color);
   color: var(--light-color);
   border: none;
   border-radius: 0;
@@ -31,7 +30,7 @@
   }
 
   &__round {
-    border-radius: 50%;
+    border-radius: 100px;
   }
 
   &__round-right {
@@ -50,6 +49,7 @@
   font-style: normal;
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
   color: var(--light-color);
+  z-index: 2;
 }
 
 .heading__secondary {
