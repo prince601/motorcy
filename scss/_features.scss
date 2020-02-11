@@ -1,13 +1,49 @@
 .features {
   &__picture {
     grid-column: 1/7;
-    background-color: var(--light-redish-primary);
-    padding: 3rem;
+    background: linear-gradient(to left, transparent, rgba(#bcc0c4, 0.89)),
+      url('../img/motorcy-13__large__1920__2x.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: var(--secondary-color);
+    }
   }
 
   &__section {
     grid-column: 7/11;
     background-color: var(--light-color-primary);
-    padding: 3rem;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    h4 {
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 2rem;
+      &::before {
+        content: '';
+        display: inline-block;
+        height: 4rem;
+        width: 4rem;
+        margin-right: 0.7rem;
+        margin-top: -1rem;
+
+        background-image: url(../img/SVG/lightbulb.svg);
+        background-size: cover;
+
+        background-color: var(--primary-color);
+        -webkit-mask-image: url(../img/SVG/lightbulb.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/SVG/lightbulb.svg);
+        mask-size: cover;
+        background-image: none;
+      }
+    }
   }
 }

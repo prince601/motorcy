@@ -60,3 +60,37 @@
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
   color: var(--light-color);
 }
+
+.list {
+  list-style: none;
+  .list-items {
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 1.7rem;
+      width: 1.7rem;
+      margin-right: 0.7rem;
+
+      background-image: url(../img/SVG/chevron-with-circle-right.svg);
+      background-size: cover;
+
+      background-color: var(--secondary-color);
+      -webkit-mask-image: url(../img/SVG/chevron-with-circle-right.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/SVG/chevron-with-circle-right.svg);
+      mask-size: cover;
+      background-image: none;
+    }
+    &:not(last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.heading-4 {
+  font-weight: 450;
+  font-size: 4rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  margin: 2rem 0;
+}

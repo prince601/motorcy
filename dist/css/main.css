@@ -114,6 +114,32 @@ a:visited {
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
   color: var(--light-color); }
 
+.list {
+  list-style: none; }
+  .list .list-items::before {
+    content: '';
+    display: inline-block;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 0.7rem;
+    background-image: url(../img/SVG/chevron-with-circle-right.svg);
+    background-size: cover;
+    background-color: var(--secondary-color);
+    -webkit-mask-image: url(../img/SVG/chevron-with-circle-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../img/SVG/chevron-with-circle-right.svg);
+    mask-size: cover;
+    background-image: none; }
+  .list .list-items:not(last-child) {
+    margin-bottom: 1.6rem; }
+
+.heading-4 {
+  font-weight: 450;
+  font-size: 4rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  margin: 2rem 0; }
+
 .contact {
   grid-column: full-start/full-end;
   background-color: var(--secondary-color); }
@@ -125,13 +151,39 @@ a:visited {
 
 .features__picture {
   grid-column: 1/7;
-  background-color: var(--light-redish-primary);
-  padding: 3rem; }
+  background: linear-gradient(to left, transparent, rgba(188, 192, 196, 0.89)), url("../img/motorcy-13__large__1920__2x.jpg");
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .features__picture svg {
+    fill: var(--secondary-color); }
 
 .features__section {
   grid-column: 7/11;
   background-color: var(--light-color-primary);
-  padding: 3rem; }
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+  .features__section h4 {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 2rem; }
+    .features__section h4::before {
+      content: '';
+      display: inline-block;
+      height: 4rem;
+      width: 4rem;
+      margin-right: 0.7rem;
+      margin-top: -1rem;
+      background-image: url(../img/SVG/lightbulb.svg);
+      background-size: cover;
+      background-color: var(--primary-color);
+      -webkit-mask-image: url(../img/SVG/lightbulb.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/SVG/lightbulb.svg);
+      mask-size: cover;
+      background-image: none; }
 
 .footer {
   grid-column: full-start/full-end;
@@ -245,3 +297,8 @@ a:visited {
 .paragraph {
   font-size: 1.6rem;
   color: var(--secondary-color-light-2); }
+
+.features__section .list-items {
+  font-size: 1.7rem;
+  color: var(--secondary-color-light-2);
+  text-transform: capitalize; }
