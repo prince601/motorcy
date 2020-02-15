@@ -8,3 +8,17 @@
   color: var(--secondary-color-light-2);
   text-transform: capitalize;
 }
+
+.quote {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.author {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: var(--font-primary);
+  align-self: start;
+}
