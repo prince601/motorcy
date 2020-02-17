@@ -42,7 +42,7 @@ body {
   display: grid;
   grid-template-rows:
     calc(100vh - 6rem) min-content repeat(3, minmax(30vw, max-content))
-    minmax(10vw, max-content) minmax(7rem, max-content);
+    minmax(40vw, max-content) minmax(7rem, max-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(15rem, 1fr) [col-end])

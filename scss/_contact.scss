@@ -1,4 +1,60 @@
 .contact {
   grid-column: full-start/full-end;
-  background-color: var(--secondary-color);
+  background: linear-gradient(to left, #551c02, #fa5103),
+    url('../img/motorcy-11__large__1920__2x.jpg');
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: minmax(8rem, max-content) 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  h1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .icon-title {
+    fill: var(--light-color);
+    height: 6rem;
+    width: 6rem;
+    border: 1px solid var(--light-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: start;
+    justify-self: start;
+    margin-left: 7rem;
+    margin-top: 2rem;
+  }
+
+  &__form {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+  }
+
+  .form {
+    &__input {
+      width: 100%;
+      outline: none;
+      background: none;
+      border: none;
+      border-bottom: 2px solid var(--light-color);
+      margin-bottom: 2rem;
+      color: var(--light-color);
+      transition: ease-in 0.3s;
+
+      &:focus {
+        border: none;
+        border-bottom: 3px solid var(--light-color);
+        font-size: 1.6rem;
+        box-shadow: 0 1rem 2rem rgba(var(--secondary-color), 0.7);
+        &:invalid {
+          border-bottom: 3px solid rgb(15, 4, 0);
+        }
+      }
+    }
+  }
 }
