@@ -75,27 +75,30 @@ a:visited {
   border: none;
   border-radius: 0;
   font-size: 1.6rem;
+  background-color: transparent;
   font-family: var(--font-primary);
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s;
   transform: scale(1);
   padding: 1.3rem 2rem;
+  box-shadow: 0 2rem 6rem rgba(var(--secondary-color), 0.4);
   display: grid;
   grid-template-columns: repeat(2, minmax(4rem, max-content)); }
-  .btn:hover {
-    background-color: #c2430a; }
   .btn:active, .btn:focus {
     outline: none;
     transform: scale(0.9);
     transition: all 0.2s; }
   .btn__round {
     border-radius: 100px; }
-  .btn__round-right {
-    border-bottom-right-radius: 30px; }
 
 .btn__outlined {
   border: 1px solid var(--light-color); }
+
+.btn__full {
+  background-color: var(--primary-color); }
+  .btn__full:hover {
+    background-color: #da4c0b; }
 
 .heading__primary {
   font-weight: 900;
@@ -107,10 +110,10 @@ a:visited {
   z-index: 2; }
 
 .heading__secondary {
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.1em;
-  font-size: 10.7rem;
-  font-style: normal;
+  font-size: 5rem;
+  text-transform: capitalize;
   text-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.466);
   color: var(--light-color); }
 
@@ -177,6 +180,7 @@ a:visited {
     border: none;
     border-bottom: 2px solid var(--light-color);
     margin-bottom: 2rem;
+    padding: 0.7rem 0;
     color: var(--light-color);
     transition: ease-in 0.3s; }
     .contact .form__input:focus {
@@ -500,8 +504,6 @@ a:visited {
     padding-right: 1rem;
     padding-left: 1rem;
     border-bottom-right-radius: 30px; }
-  .showcase .btn__full {
-    background-color: var(--primary-color); }
 
 .paragraph {
   font-size: 1.6rem;
