@@ -3,6 +3,11 @@
     grid-column: 1/7;
     background: linear-gradient(to left, transparent, rgba(#bcc0c4, 0.89)),
       url('../img/motorcy-13__large__1920__2x.jpg');
+    @media only screen and (max-width: $bp-medium) {
+      background: linear-gradient(to left, transparent, rgba(#bcc0c4, 0.89)),
+        url('../img/motorcy-13__small__740__2x.jpg');
+    }
+
     background-position: center;
     background-size: cover;
 

@@ -12,6 +12,20 @@
       rgba(#687887, 0.55)
     ),
     url('../img/motorcy-4__large__1920__2x.jpg');
+
+  @media only screen and (max-width: $bp-medium) {
+    background: linear-gradient(
+        to right,
+        rgba(#334960, 0.78),
+        rgba(#687887, 0.55)
+      ),
+      url('../img/motorcy-4__small__740__2x.jpg');
+    min-height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   min-height: 100%;
   position: relative;
   background-position: center;

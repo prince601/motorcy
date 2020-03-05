@@ -30,6 +30,16 @@
     display: grid;
     grid-template-rows: repeat(6, 10vw);
     grid-template-columns: repeat(8, 1fr);
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-rows: repeat(6, 13vw);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-rows: repeat(6, 15vw);
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      grid-template-rows: repeat(6, 18vw);
+    }
   }
   //item 1
   &__item--1 {
@@ -53,6 +63,10 @@
     grid-row: 1/3;
     background: linear-gradient(45deg, #551c02, #fa5103),
       url('../img/motorcy-11__large__1920__2x.jpg');
+    @media only screen and (max-width: $bp-small) {
+      background: linear-gradient(45deg, #551c02, #fa5103),
+        url('../img/motorcy-11__small__740__2x.jpg');
+    }
     background-position: center;
     background-size: cover;
     color: var(--light-color);
@@ -152,6 +166,10 @@
     grid-row: 3/5;
     background: linear-gradient(to right, rgb(8, 75, 8), #0ce20c),
       url('../img/motorcy-6__large__1920__2x.jpg');
+    @media only screen and (max-width: $bp-medium) {
+      background: linear-gradient(to right, rgb(8, 75, 8), #0ce20c),
+        url('../img/motorcy-6__small__740__2x.jpg');
+    }
     background-position: center;
     background-size: cover;
 

@@ -19,7 +19,9 @@
   padding: 1.3rem 2rem;
   box-shadow: 0 2rem 6rem rgba(var(--secondary-color), 0.4);
   display: grid;
-  grid-template-columns: repeat(2, minmax(4rem, max-content));
+  // grid-template-columns: repeat(2, minmax(4rem, max-content));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content;
 
   &:active,
   &:focus {

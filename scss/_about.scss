@@ -8,6 +8,10 @@
   grid-gap: 1rem;
   justify-items: center;
 
+  // @media only screen and (max-width: $bp-small) {
+  //   padding-bottom: 2rem;
+  // }
+
   h1 {
     grid-column: 2/3;
     grid-row: 1/2;

@@ -12,16 +12,34 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns:
+      minmax(10rem, min-content) minmax(min-content, 1fr) minmax(
+        8rem,
+        max-content
+      )
+      3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__logo {
     align-self: center;
     justify-self: center;
     min-height: 5rem;
     min-width: 5rem;
     margin: 1rem 3rem;
+
     svg {
       fill: var(--light-color);
       min-height: 10rem;
       width: 8vw;
+      @media only screen and (max-width: $bp-small) {
+        width: 10vw;
+      }
+      @media only screen and (max-width: $bp-smaller) {
+        width: 12vw;
+      }
     }
   }
 
